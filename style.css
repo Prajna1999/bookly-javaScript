@@ -1,0 +1,111 @@
+:root{
+    --primary-color:#23a094;
+    --secondary-color:#8ee7eaf1;
+    --border-color:#000;
+    --danger-color:#DB162F;
+    --background-color:#e0e0e0;
+    --navbar-color:#d3d3d3;
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+   
+}
+.wrapper .siteHeader{
+    line-height: 18px;
+    height: 75px;
+    width: 100vw;
+    background-color: #F4F1EA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    pointer-events: auto;
+    box-shadow:0 1px 2px rgba(0,0,0,0.15);
+}
+.siteHeader .site-logo a{
+    font-size: 32px;
+    color:var(--border-color);
+    font-weight: 300;
+    word-spacing: 1.125rem;
+    
+}
+.siteHeader .site-logo a span{
+    font-weight: 600;
+}
+
+.siteHeader-primaryNav .siteHeader-menuList{
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.siteHeader-menuList .listItems{
+    margin: 0 15px;
+}
+
+.listItems a{
+    font-size: 18px;
+    padding: 14px;
+    width: max-content;
+    height: max-content;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+    color: black;
+    transition: all 0.2s ease;
+}
+.listItems a:hover{
+    color: var(--background-color);
+    background-color: var(--border-color);
+}
+
+.searchBox-form input{
+    height: 32px;
+    width: 300px;
+    padding: 0 2px;
+    outline: none;
+    border: #DCD6CC 1px solid;
+    border-radius: 3px;
+
+    /* background-color: red; */
+    position:relative
+}
+
+.searchBox #searchBtn {
+    position: relative;
+    top: 0;
+    left: -25px;
+    background-color: transparent;
+    /* outline: none; */
+    border: transparent;
+    cursor: pointer;
+    
+}
+.searchBox #searchBtn i{
+    background-color:white ;
+    outline: none;
+    color: #d3d3d3;
+}
+.searchBox-form input:focus{
+    box-shadow: 0 0 4px rgba(185,173,153,0.5);
+    border-color: #B9AD99;
+    outline: none;
+}
