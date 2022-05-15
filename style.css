@@ -44,14 +44,16 @@
     
 }
 .siteHeader .site-logo a span{
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.siteHeader-primaryNav .siteHeader-menuList{
+.siteHeader-primaryNav>ul{
     display: flex;
     width: 100px;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    right:100px;
     
 }
 .siteHeader-menuList .listItems{
@@ -80,7 +82,7 @@
 .searchBox-form input{
     height: 32px;
     width: 300px;
-    padding: 0 2px;
+    padding: 0 5px;
     outline: none;
     border: #DCD6CC 1px solid;
     border-radius: 3px;
