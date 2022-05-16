@@ -52,8 +52,8 @@
     width: 100px;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    right:100px;
+    /* position: relative;
+    right:100px; */
     
 }
 .siteHeader-menuList .listItems{
@@ -92,18 +92,21 @@
 }
 
 .searchBox #searchBtn {
-    position: relative;
-    top: 0;
-    left: -25px;
-    background-color: transparent;
-    /* outline: none; */
-    border: transparent;
-    cursor: pointer;
-    
+   
+   background-color: transparent;
+   border: transparent;
+    display: inline-block;
+height: 19px;
+position: relative;
+width: 18px;
+right: 25px;
+top: 0;
+cursor: pointer;
+     
 }
 .searchBox #searchBtn i{
     background-color:white ;
-    outline: none;
+    
     color: #d3d3d3;
 }
 .searchBox-form input:focus{
