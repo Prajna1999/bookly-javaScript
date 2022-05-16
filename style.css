@@ -16,23 +16,27 @@
     font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
     list-style-type: none;
     text-decoration: none;
+    
 }
 
-.wrapper{
+ .wrapper{
     width: 100vw;
     height: 100vh;
-   overflow: hidden;
-}
+   /* overflow: hidden; */
+   margin-bottom: 20px;
+} 
 .wrapper .siteHeader{
     line-height: 18px;
     height: 75px;
-    width: 100vw;
+    width: 100%;
     background-color: #F4F1EA;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    top: 0;
     z-index: 2;
+    will-change: transform ;
     pointer-events: auto;
     box-shadow:0 1px 2px rgba(0,0,0,0.15);
 }
@@ -116,12 +120,19 @@ cursor: pointer;
 }
 .grids{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 10px;
+    /* z-index: 3; */
+    grid-template-columns: repeat(3,1fr);
+    flex-direction: row;
+    position: relative;
+    top: 100px;
+    
 }
 .grids .books{
-    width: 200px;
-    height: 150px;
-    margin: 10px;
+    margin: 20px ;
+    /* background-color: aquamarine; */
+    min-height: 200px;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 5px;
     background-color: #23a094;
 }
