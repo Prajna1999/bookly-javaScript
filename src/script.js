@@ -3,11 +3,15 @@ import { Store } from "./book.js";
 const searchInput=document.querySelector(".searchBox-form input[type=text]");
 const form=document.querySelector(".searchBox-form");
 const modal=document.querySelector(".modal");
+const wrapper=document.querySelector(".wrapper");
 let books=[];
 
 function showPopup(message){
+    // document.querySelector(".grid").remove();
     modal.innerText=message;
     modal.classList.add("show");
+    // wrapper.classList.add("error");
+    
     setTimeout(()=>{
         modal.classList.remove("show");
     },2000);
