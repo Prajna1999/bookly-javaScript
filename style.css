@@ -26,6 +26,7 @@
    margin-bottom: 20px;
 } 
 .wrapper .siteHeader{
+    
     line-height: 18px;
     height: 75px;
     width: 100%;
@@ -118,7 +119,7 @@ cursor: pointer;
     border-color: #B9AD99;
     outline: none;
 }
-.grids{
+.grid{
     display: grid;
     /* z-index: 3; */
     grid-template-columns: repeat(3,1fr);
@@ -127,12 +128,31 @@ cursor: pointer;
     top: 100px;
     
 }
-.grids .books{
+.books{
     margin: 20px ;
     /* background-color: aquamarine; */
     min-height: 200px;
     min-width: 200px;
     padding: 20px;
     border-radius: 5px;
-    background-color: #23a094;
+    background-color:#F4F1EA;
+}
+
+.modal.show{
+    /* visibility: none; */
+    width: max-content;
+    height: 50px;
+    background-color: #F4F1EA;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    color: #DB162F;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 3;
+    border: 1px solid var(--danger-color);
 }
