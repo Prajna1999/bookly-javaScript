@@ -57,6 +57,7 @@ function fetchAPI(queryString){
             // do something
             if(result.items===undefined){
                 // throw new Error('No such book exist');
+                // document.querySelector(".grid").remove();
                 showPopup("No results found!");
                 
             }
